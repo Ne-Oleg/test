@@ -1,16 +1,45 @@
 <html>
     <head>
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
         <style>
+            
+            
             body{
                 margin: 0;
             }
-         
+            canvas{
+                 display: block;
+                 margin-left: 100px;
+            }
         </style>
+        
     </head>
     <body>
-       <div id="rectBig"></div>
+        <div class="ShapesIn">
+            <span id="shapesIn1" class="ShapesIn1">Shapes in: 00</span>
+            <span id="ShapesInArea" class="ShapesInArea">Shapes area: 00</span>
+        </div>
+      
         <script src="pixi.js"></script>
         <script type="text/javascript"></script>
-        <script src="script.js"></script>        
+        <div>
+        <canvas id="mycanvas"></canvas>
+        <script src="script.js"></script> 
+        </div>
+
+        <div> 
+            <span class="pagination1">
+                <a id="btn1" onclick="onClickMinusPerSecNew()" href="#">-</a>
+                <a id="btn2" onclick="onClickPlusPerSecNew()" href="#">+</a>
+            </span>
+            <span id="shapesPerSec" class="shapesPerSec">Shapes per sec: 00</span>
+            <span class="pagination2">
+                <a id="btn3" onclick="onClickMinusNew()" href="#">-</a>
+                <a id="btn4" onclick="onClickPlusNew()" href="#">+</a>
+            </span>
+            <span id="Gravity" class="Gravity">Gravity: 00</span>
+        </div>
+        <script src="script1.js"></script> 
     </body> 
 </html>
